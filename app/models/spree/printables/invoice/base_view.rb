@@ -1,8 +1,8 @@
-include Forwardable
+# include Forwardable
 
 module Spree
   class Printables::Invoice::BaseView < Printables::BaseView
-    extend Forwardable
+    # extend Forwardable
     extend Spree::DisplayMoney
 
     attr_reader :printable
