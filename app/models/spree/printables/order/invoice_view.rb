@@ -5,9 +5,9 @@ module Spree
     delegate  :total, to: :@printable
     delegate  :payments, to: :@printable
     delegate  :shipments, to: :@printable
-    delegate :email, to: :@printable
-    delegate :bill_address, to: :@printable
-    delegate :ship_address, to: :@printable
+    delegate  :email, to: :@printable
+    delegate  :bill_address, to: :@printable
+    delegate  :ship_address, to: :@printable
 
     def items
       printable.line_items.map do |item|

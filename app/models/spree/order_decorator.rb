@@ -1,4 +1,4 @@
-Spree::Order.class_eval do
+class Spree::Order
   has_many :bookkeeping_documents, as: :printable, dependent: :destroy
   has_one :invoice, -> { where(template: 'invoice') },
           class_name: 'Spree::BookkeepingDocument',
