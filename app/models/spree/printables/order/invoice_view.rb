@@ -6,6 +6,7 @@ module Spree
     delegate  :item_total, to: :@printable
     delegate  :total, to: :@printable
     delegate  :payments, to: :@printable
+    delegate  :refunds, to: :@printable
     delegate  :shipments, to: :@printable
     delegate  :email, to: :@printable
     delegate  :bill_address, to: :@printable
